@@ -2,14 +2,14 @@ CC=g++
 CPPFLAGS= -Wall -std=c++11 -O2 -I./shared 
 LINKFLAGS = -lpthread -z muldefs
 # Headers
-DEPS = ./Edge.hpp ./Network.hpp \
-	   ./Vertex.hpp 
+DEPS = ./src/Edge.hpp ./src/Network.hpp \
+	   ./src/Vertex.hpp 
 # Object files
 
-Dijkstras = ./Edge.o \
-			./Vertex.o \
-			./Network.o \
-			./Driver.o
+Dijkstras = ./src/Edge.o \
+			./src/Vertex.o \
+			./src/Network.o \
+			./src/Driver.o
 
 
 .PHONY : all
