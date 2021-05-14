@@ -28,6 +28,16 @@ Network::Network(void)
 
 }
 
+/* Deonstuctor */
+Network::~Network()
+{
+    // Loop through the vertexes and call the deconstructor for each
+    for (Vertex* x: Vertexes)
+    {
+        delete x;
+    }
+}
+
 /* Network:new_vertex
     This method will add a new vertex to our list with given ID.
     Given: int identification - ID of the new vertex*/

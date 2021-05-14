@@ -33,6 +33,9 @@ class Network {
     /* Default Constructor */
     Network(void);
 
+    /* Deconstructor */
+    ~Network();
+
     /* Network:new_vertex
     This method will add a new vertex to our list with given ID.
     Given: int identification - ID of the new vertex*/

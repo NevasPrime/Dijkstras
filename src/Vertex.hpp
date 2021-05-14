@@ -27,6 +27,11 @@ class Vertex {
     /* Vertex Constructor
     Given: int identification - identification ID of the vertex.*/
     Vertex(int identification);
+
+    /* Vertex Deconstructor
+     Remove all edges associated with this
+    */
+    ~Vertex();
     
     /* Vertex:get_ID
     Returns the id

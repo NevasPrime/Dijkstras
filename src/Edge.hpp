@@ -31,4 +31,11 @@ class Edge {
            vertex two - second vertex of the edge. 
            int cost - weight of the edge*/
     Edge(Vertex *one, Vertex *two, int cost); 
+    
+    // Deconstructor
+    ~Edge();
+
+    // Overloaded Operators
+    bool operator== (const Edge& e);
+    bool operator!= (const Edge& e);
 };

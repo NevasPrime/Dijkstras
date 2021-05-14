@@ -53,4 +53,5 @@ int main(void)
     // Call the algorithm and display the returned solution.
     std::cout << hd.Dijkstras(source, destination) << std::endl;
 
+    // Implicitly deconstruct network at the end
 }

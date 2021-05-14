@@ -1,11 +1,11 @@
 CC=g++
-CPPFLAGS= -Wall -std=c++11 -O2 -I./shared 
+CPPFLAGS= -Wall -O2 
 LINKFLAGS = -lpthread -z muldefs
 # Headers
 DEPS = ./src/Edge.hpp ./src/Network.hpp \
 	   ./src/Vertex.hpp 
-# Object files
 
+# Object files
 Dijkstras = ./src/Edge.o \
 			./src/Vertex.o \
 			./src/Network.o \

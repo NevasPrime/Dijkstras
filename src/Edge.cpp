@@ -25,3 +25,27 @@ Edge::Edge(Vertex *one, Vertex *two, int cost)
     ends[0] = one;
     ends[1] = two;
 }
+
+/* Deconstructor
+    This will delete remove the edge from each of the Vertex's list of edges.
+*/
+Edge::~Edge() 
+{    
+    ends[0]->Edges.remove(this);
+    ends[1]->Edges.remove(this);
+}
+
+/* Overloaded == Operator */
+bool Edge::operator== (const Edge& e)
+{
+    // Make sure everything is the same
+    if ( (weight == e.weight) && (ends[0] == e.ends[0]) && (ends[1] == e.ends[1]) )
+        return true;
+    return false;
+}
+
+/* Overloaded != Operator */
+bool Edge::operator!= (const Edge& e)
+{
+    return !operator==(e);
+}
